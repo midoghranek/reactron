@@ -1,0 +1,14 @@
+@import "./components/variables.scss";
+@import "./components/fonts.scss";
+
+body {
+  background-color: $bg-color;
+  color: $text-color;
+  font-family: "Roboto", sans-serif;
+  .system-versions {
+    span {
+      text-transform: capitalize;
+      color: #eee;
+    }
+  }
+}

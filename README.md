@@ -8,5 +8,5 @@ A starter repo for creating native desktop app using create-react-app and electr
 
 ## Scripts
 
-`npm start` will start the Electron app and the React app at the same time.  
-`npm run build` will build the React app and package it along the Electron app.
+`yarn start` will start the Electron app and the React app at the same time.  
+`yarn build` will build the React app and package it along the Electron app.

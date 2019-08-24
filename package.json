@@ -1,32 +1,10 @@
 {
-  "name": "cra-electron",
-  "description": "CRA + Electron sitting in a tree",
-  "author": "Kitze",
-  "version": "0.2.7",
+  "name": "reactron",
+  "description": "CRA + Electron starter package",
+  "author": "Ghraniko",
+  "version": "0.0.1",
   "private": true,
-  "dependencies": {
-    "cross-env": "5.1.6",
-    "electron-is-dev": "0.3.0",
-    "electron-log": "^2.2.6",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "update-electron-app": "^1.2.0"
-  },
-  "devDependencies": {
-    "concurrently": "3.5.1",
-    "electron": "2.0.2",
-    "electron-builder": "^20.15.1",
-    "prettier": "^1.4.4",
-    "react-scripts": "1.1.4",
-    "wait-on": "2.1.0"
-  },
-  "build": {
-    "publish": {
-      "provider": "github"
-    }
-  },
-  "main": "public/electron.js",
-  "homepage": "./",
+  "main": "src/function/main.js",
   "scripts": {
     "react-start": "react-scripts start",
     "react-build": "react-scripts build",
@@ -36,5 +14,39 @@
     "release": "yarn react-build && electron-builder --publish=always",
     "build": "yarn react-build && yarn electron-build",
     "start": "concurrently \"cross-env BROWSER=none yarn react-start\" \"wait-on http://localhost:3000 && electron .\""
+  },
+  "dependencies": {
+    "cross-env": "5.2.0",
+    "electron-is-dev": "1.1.0",
+    "electron-log": "^3.0.7",
+    "node-sass": "^4.12.0",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "update-electron-app": "^1.5.0"
+  },
+  "devDependencies": {
+    "concurrently": "^4.1.2",
+    "electron": "^6.0.2",
+    "electron-builder": "^21.2.0",
+    "prettier": "^1.18.2",
+    "react-scripts": "3.1.1",
+    "wait-on": "3.3.0"
+  },
+  "build": {
+    "publish": {
+      "provider": "github"
+    }
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
