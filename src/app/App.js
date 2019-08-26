@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./assets/styles/style";
 const { remote } = window.require("electron");
+window.require("electron");
 
 class App extends Component {
   state = {
