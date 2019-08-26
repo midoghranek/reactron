@@ -7,8 +7,10 @@
 A starter repo for creating native desktop app using create-react-app and electron.js
 
 To get started
-`git clone https://github.com/midoghranek/reactron get-started-with-reactron`
-`npm install`
+```git
+git clone https://github.com/midoghranek/reactron get-started-with-reactron
+npm install
+```
 
 ## Scripts
 
